@@ -83,7 +83,6 @@ class Film implements ModelInterface, ArrayAccess
 'release_format' => 'string',
 'running_time_film' => 'string',
 'running_time_series' => 'string',
-'flanders_image_id' => 'float',
 'flemish_producer_text' => 'string',
 'sound' => 'string',
 'sound_format' => 'string',
@@ -128,7 +127,6 @@ class Film implements ModelInterface, ArrayAccess
 'release_format' => null,
 'running_time_film' => null,
 'running_time_series' => null,
-'flanders_image_id' => null,
 'flemish_producer_text' => null,
 'sound' => null,
 'sound_format' => null,
@@ -194,7 +192,6 @@ class Film implements ModelInterface, ArrayAccess
 'release_format' => 'release_format',
 'running_time_film' => 'running_time_film',
 'running_time_series' => 'running_time_series',
-'flanders_image_id' => 'flanders_image_id',
 'flemish_producer_text' => 'flemish_producer_text',
 'sound' => 'sound',
 'sound_format' => 'sound_format',
@@ -239,7 +236,6 @@ class Film implements ModelInterface, ArrayAccess
 'release_format' => 'setReleaseFormat',
 'running_time_film' => 'setRunningTimeFilm',
 'running_time_series' => 'setRunningTimeSeries',
-'flanders_image_id' => 'setFlandersImageId',
 'flemish_producer_text' => 'setFlemishProducerText',
 'sound' => 'setSound',
 'sound_format' => 'setSoundFormat',
@@ -284,7 +280,6 @@ class Film implements ModelInterface, ArrayAccess
 'release_format' => 'getReleaseFormat',
 'running_time_film' => 'getRunningTimeFilm',
 'running_time_series' => 'getRunningTimeSeries',
-'flanders_image_id' => 'getFlandersImageId',
 'flemish_producer_text' => 'getFlemishProducerText',
 'sound' => 'getSound',
 'sound_format' => 'getSoundFormat',
@@ -381,7 +376,6 @@ class Film implements ModelInterface, ArrayAccess
         $this->container['release_format'] = isset($data['release_format']) ? $data['release_format'] : null;
         $this->container['running_time_film'] = isset($data['running_time_film']) ? $data['running_time_film'] : null;
         $this->container['running_time_series'] = isset($data['running_time_series']) ? $data['running_time_series'] : null;
-        $this->container['flanders_image_id'] = isset($data['flanders_image_id']) ? $data['flanders_image_id'] : null;
         $this->container['flemish_producer_text'] = isset($data['flemish_producer_text']) ? $data['flemish_producer_text'] : null;
         $this->container['sound'] = isset($data['sound']) ? $data['sound'] : null;
         $this->container['sound_format'] = isset($data['sound_format']) ? $data['sound_format'] : null;
@@ -1062,30 +1056,6 @@ class Film implements ModelInterface, ArrayAccess
     public function setRunningTimeSeries($running_time_series)
     {
         $this->container['running_time_series'] = $running_time_series;
-
-        return $this;
-    }
-
-    /**
-     * Gets flanders_image_id
-     *
-     * @return float
-     */
-    public function getFlandersImageId()
-    {
-        return $this->container['flanders_image_id'];
-    }
-
-    /**
-     * Sets flanders_image_id
-     *
-     * @param float $flanders_image_id flanders_image_id
-     *
-     * @return $this
-     */
-    public function setFlandersImageId($flanders_image_id)
-    {
-        $this->container['flanders_image_id'] = $flanders_image_id;
 
         return $this;
     }

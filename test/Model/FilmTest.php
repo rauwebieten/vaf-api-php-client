@@ -265,13 +265,6 @@ class FilmTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "flanders_image_id"
-     */
-    public function testPropertyFlandersImageId()
-    {
-    }
-
-    /**
      * Test attribute "flemish_producer_text"
      */
     public function testPropertyFlemishProducerText()

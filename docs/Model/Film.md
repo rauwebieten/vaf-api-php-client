@@ -30,7 +30,6 @@ Name | Type | Description | Notes
 **release_format** | **string** |  | [optional] 
 **running_time_film** | **string** |  | [optional] 
 **running_time_series** | **string** |  | [optional] 
-**flanders_image_id** | **float** |  | [optional] 
 **flemish_producer_text** | **string** |  | [optional] 
 **sound** | **string** |  | [optional] 
 **sound_format** | **string** |  | [optional] 
