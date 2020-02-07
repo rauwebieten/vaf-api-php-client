@@ -64,7 +64,6 @@ class Film implements ModelInterface, ArrayAccess
 'original_language' => 'string',
 'production_status' => 'string',
 'release' => 'string',
-'type' => 'string',
 'website_launch_date' => 'string',
 'year' => 'int',
 'art_director' => 'string',
@@ -108,7 +107,6 @@ class Film implements ModelInterface, ArrayAccess
 'original_language' => null,
 'production_status' => null,
 'release' => null,
-'type' => null,
 'website_launch_date' => null,
 'year' => null,
 'art_director' => null,
@@ -173,7 +171,6 @@ class Film implements ModelInterface, ArrayAccess
 'original_language' => 'original_language',
 'production_status' => 'production_status',
 'release' => 'release',
-'type' => 'type',
 'website_launch_date' => 'website_launch_date',
 'year' => 'year',
 'art_director' => 'art_director',
@@ -217,7 +214,6 @@ class Film implements ModelInterface, ArrayAccess
 'original_language' => 'setOriginalLanguage',
 'production_status' => 'setProductionStatus',
 'release' => 'setRelease',
-'type' => 'setType',
 'website_launch_date' => 'setWebsiteLaunchDate',
 'year' => 'setYear',
 'art_director' => 'setArtDirector',
@@ -261,7 +257,6 @@ class Film implements ModelInterface, ArrayAccess
 'original_language' => 'getOriginalLanguage',
 'production_status' => 'getProductionStatus',
 'release' => 'getRelease',
-'type' => 'getType',
 'website_launch_date' => 'getWebsiteLaunchDate',
 'year' => 'getYear',
 'art_director' => 'getArtDirector',
@@ -357,7 +352,6 @@ class Film implements ModelInterface, ArrayAccess
         $this->container['original_language'] = isset($data['original_language']) ? $data['original_language'] : null;
         $this->container['production_status'] = isset($data['production_status']) ? $data['production_status'] : null;
         $this->container['release'] = isset($data['release']) ? $data['release'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['website_launch_date'] = isset($data['website_launch_date']) ? $data['website_launch_date'] : null;
         $this->container['year'] = isset($data['year']) ? $data['year'] : null;
         $this->container['art_director'] = isset($data['art_director']) ? $data['art_director'] : null;
@@ -600,30 +594,6 @@ class Film implements ModelInterface, ArrayAccess
     public function setRelease($release)
     {
         $this->container['release'] = $release;
-
-        return $this;
-    }
-
-    /**
-     * Gets type
-     *
-     * @return string
-     */
-    public function getType()
-    {
-        return $this->container['type'];
-    }
-
-    /**
-     * Sets type
-     *
-     * @param string $type type
-     *
-     * @return $this
-     */
-    public function setType($type)
-    {
-        $this->container['type'] = $type;
 
         return $this;
     }

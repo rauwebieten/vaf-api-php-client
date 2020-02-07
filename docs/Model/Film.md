@@ -11,7 +11,6 @@ Name | Type | Description | Notes
 **original_language** | **string** |  | [optional] 
 **production_status** | **string** |  | [optional] 
 **release** | **string** |  | [optional] 
-**type** | **string** |  | [optional] 
 **website_launch_date** | **string** |  | [optional] 
 **year** | **int** |  | [optional] 
 **art_director** | **string** |  | [optional] 

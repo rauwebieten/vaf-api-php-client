@@ -132,13 +132,6 @@ class FilmTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "type"
-     */
-    public function testPropertyType()
-    {
-    }
-
-    /**
      * Test attribute "website_launch_date"
      */
     public function testPropertyWebsiteLaunchDate()
