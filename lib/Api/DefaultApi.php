@@ -343,10 +343,11 @@ class DefaultApi
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('X-Api-Key');
+        if ($apiKey !== null) {
+            $headers['X-Api-Key'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -625,10 +626,11 @@ class DefaultApi
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('X-Api-Key');
+        if ($apiKey !== null) {
+            $headers['X-Api-Key'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -888,10 +890,11 @@ class DefaultApi
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('X-Api-Key');
+        if ($apiKey !== null) {
+            $headers['X-Api-Key'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1170,10 +1173,11 @@ class DefaultApi
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('X-Api-Key');
+        if ($apiKey !== null) {
+            $headers['X-Api-Key'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1452,10 +1456,11 @@ class DefaultApi
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('X-Api-Key');
+        if ($apiKey !== null) {
+            $headers['X-Api-Key'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1734,10 +1739,11 @@ class DefaultApi
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('X-Api-Key');
+        if ($apiKey !== null) {
+            $headers['X-Api-Key'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1997,10 +2003,11 @@ class DefaultApi
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('X-Api-Key');
+        if ($apiKey !== null) {
+            $headers['X-Api-Key'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {

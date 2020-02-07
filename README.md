@@ -56,6 +56,10 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure API key authorization: apiAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
 $apiInstance = new Swagger\Client\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -72,6 +76,10 @@ try {
     echo 'Exception when calling DefaultApi->assetsIdDownloadGet: ', $e->getMessage(), PHP_EOL;
 }
 
+// Configure API key authorization: apiAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
 $apiInstance = new Swagger\Client\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -88,6 +96,10 @@ try {
     echo 'Exception when calling DefaultApi->assetsIdGet: ', $e->getMessage(), PHP_EOL;
 }
 
+// Configure API key authorization: apiAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
 $apiInstance = new Swagger\Client\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -103,6 +115,10 @@ try {
     echo 'Exception when calling DefaultApi->filmsGet: ', $e->getMessage(), PHP_EOL;
 }
 
+// Configure API key authorization: apiAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
 $apiInstance = new Swagger\Client\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -119,6 +135,10 @@ try {
     echo 'Exception when calling DefaultApi->filmsIdGet: ', $e->getMessage(), PHP_EOL;
 }
 
+// Configure API key authorization: apiAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
 $apiInstance = new Swagger\Client\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -135,6 +155,10 @@ try {
     echo 'Exception when calling DefaultApi->filmsIdPostersGet: ', $e->getMessage(), PHP_EOL;
 }
 
+// Configure API key authorization: apiAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
 $apiInstance = new Swagger\Client\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -151,6 +175,10 @@ try {
     echo 'Exception when calling DefaultApi->filmsIdStillsGet: ', $e->getMessage(), PHP_EOL;
 }
 
+// Configure API key authorization: apiAuth
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
 $apiInstance = new Swagger\Client\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -192,9 +220,11 @@ Class | Method | HTTP request | Description
 ## Documentation For Authorization
 
 
-## bearerAuth
+## apiAuth
 
-- **Type**: HTTP bearer authentication
+- **Type**: API key
+- **API key parameter name**: X-Api-Key
+- **Location**: HTTP header
 
 
 ## Author
